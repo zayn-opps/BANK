@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <title>Your Website</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-blue-200 hover:bg-pink-200 p-2">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <img class="h-20 w-20" src="/img/Untitled.png" alt="" srcset="">
+                <!-- <a href="#" class="text-white text-xl font-bold">Your Logo</a>
+                 -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="#" class="text-white">Home</a>
+                    <a href="#" class="text-white">About</a>
+                    <a href="#" class="text-white">Services</a>
+                    <a href="#" class="text-white">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <!-- Hamburger menu button for mobile -->
+                    <button id="mobile-menu-button" class="text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-500">
+        <a href="#" class="block py-2 px-4 text-white">Home</a>
+        <a href="#" class="block py-2 px-4 text-white">About</a>
+        <a href="#" class="block py-2 px-4 text-white">Services</a>
+        <a href="#" class="block py-2 px-4 text-white">Contact</a>
+    </div>
+    <!-- main ar kaj -->
+
+<div class="text-red-200  text-center uppercase mt-10 text-3xl hover:bg-pink-200">MY <span class="text-blue-500"> BANK !!!</span> </div>
+<!-- my bank kaj sesh -->
+
+
+
+
+
+
+
+<main class=" grid grid-cols-3 mt-10 gap-4 w-3/4 mx-auto ">
+
+
+
+
+
+<div class=" bg-pink-200 hover:bg-purple-300 p-8 rounded-lg">
+    <h1 class="uppercase text-white text-3xl  ">deposite</h1>
+    <h2 class=" text-3xl uppercase " >$<span id="deposit-total">00</span></h2>
+</div>
+
+<div class=" bg-yellow-400  hover:bg-purple-700 p-8  rounded-lg">
+    <h1 class="uppercase text-white text-3xl   ">withdraw</h1>
+    <h2 class=" text-3xl uppercase ">$<span id="withdraw-minas">00</span</h2>
+</div>
+
+<div class="  bg-purple-700 p-8 rounded-lg">
+    <h1 class=" text-white text-3xl ">balance</h1>
+    <h2 class=" text-3xl uppercase " > $<span id="blance-total">00</span</h2>  
+</div>
+
+</main>
+
+<!-- 3tar kaj sesh opore  -->
+
+<section class="grid grid-cols-2 w-3/4 mx-auto  mt-10  gap-4 ">
+<div>
+<div class=" bg-green-300  hover:bg-yellow-600 rounded-lg p-8">
+    <h1 class="uppercase text-pink-600 text-3xl">Your deposite</h1><br>
+    <div>
+    <input id="deposite_field" type="text" class="text-3xl rounded-lg" placeholder=" $amount you deposite  "><br><br>
+    <button  id="deposite_button"  class="uppercase bg-blue-200 rounded-lg text-3xl ">deposite</button>
+</div>
+</div>
+</div>
+
+<!-- 2nd kAJ -->
+
+<div>
+    <div class="  bg-purple-800 rounded-lg p-8">
+        <h1 class="uppercase text-pink-600 text-3xl">Your withdraw</h1><br>
+        <input type="text" id="placeholder-withdraw" class="text-3xl rounded-lg" placeholder=" $amount you withdraw "><br><br>
+        <button id="withdraw-btn"  class="uppercase bg-blue-200 rounded-lg text-3xl " >withdraw</button>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+   <script type="module" src="/index.js"></script>
+</body>
+</html>
